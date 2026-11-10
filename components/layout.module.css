@@ -1,0 +1,39 @@
+/* Scoped to Layout: imported as `styles` in layout.js (styles.container, etc.). */
+
+/* Centers the page and limits line length so the text is easy to read. */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+/* Stacks the profile photo and name vertically and centers them. */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Space above the "← Back to home" link on pages that are not the homepage. */
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+/* Homepage: fill the viewport so the intro card can sit in the remaining space. */
+.home {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+/* Flex-grow the main area and center .introCard horizontally and vertically. */
+.homeMain {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }

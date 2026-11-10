@@ -1,0 +1,65 @@
+/* Reusable CSS Module classes (utilStyles in JS). Import this file where you need them;
+   they are not applied automatically from layout.module.css. */
+
+/* Extra-large heading: homepage name in Layout. */
+.heading2Xl {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+/* Large heading: name on non-home pages in Layout. */
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+/* Medium heading: intro section on the homepage. */
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1.5rem;
+}
+
+/* Makes a square image look circular (used on the profile photo on home and other pages). */
+.borderCircle {
+  border-radius: 9999px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Use the parent’s color instead of the default blue on links. */
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding: 1px;
+}
+
+/* Reset list bullets and spacing for a custom post list. */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+/* Muted color for dates and secondary text. */
+.lightText {
+  color: #666;
+}
